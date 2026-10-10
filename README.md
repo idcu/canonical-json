@@ -92,14 +92,15 @@ npm test        # 即 node --test（内置 test runner，零依赖）
   JS 库最常见的静默缺陷），并检查 `package.json` 的入口指向真实文件；
 - `test/errors.test.js`：每个"拒绝"路径都带着 `code` 与 `path`。
 
-**对照 ngm 的库标准**（在 ngm 仓库里）：
+**对照 ngm 的库标准**（标准页与自检器都在 ngm 仓库里）：
 
 ```bash
+# 在 ngm 仓库里执行；指向本库
 bash scripts/check-library-standard.sh /path/to/canonical-json --strict
 ```
 
-本库是按 [JS Git 库的标准](../../ngm/docs/guides/js-git-library-standard.md) 写的：
-必做项全绿是设计目标，不是事后补齐。
+标准：[JS Git 库的标准](https://gitee.com/idcu/ngm/blob/main/docs/guides/js-git-library-standard.md)。
+本库是按它写的：必做项全绿是设计目标，不是事后补齐。
 
 ## 发布
 
