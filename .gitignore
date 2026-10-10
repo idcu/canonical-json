@@ -1,0 +1,11 @@
+# 零依赖，但本地偶尔会装点工具
+node_modules/
+
+# 日志与编辑器
+*.log
+.DS_Store
+.idea/
+.vscode/
+
+# 注意：这里**故意不忽略 src/**——
+# 本库没有构建步骤，src/ 就是运行时那份代码（见 README「为什么没有 dist」）。

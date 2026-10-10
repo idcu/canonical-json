@@ -1,0 +1,8 @@
+# 行尾一律 LF：本库的产物是"确定性字节"，而 CRLF 会让同一份内容在两台机器上
+# 得到不同的哈希。这条不是风格偏好，是功能前提。
+* text=auto eol=lf
+
+# 二进制/生成物不做文本转换
+*.png binary
+*.jpg binary
+*.tgz binary

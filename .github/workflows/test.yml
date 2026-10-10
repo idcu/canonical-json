@@ -1,0 +1,21 @@
+# 零依赖，因此不需要 install 步骤——直接跑内置 test runner。
+# （这也是"免构建"的另一面：CI 与用户跑的完全是同一份文件。）
+name: test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ['20', '22', '24']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - run: node --test

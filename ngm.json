@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "name": "canonical-json",
+  "version": "1.0.0",
+  "runtime": "node",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts"
+}

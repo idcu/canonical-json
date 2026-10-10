@@ -1,0 +1,36 @@
+{
+  "name": "@idcu/canonical-json",
+  "version": "1.0.0",
+  "description": "Deterministic JSON serialization and hashing: same value, same bytes. Zero dependencies, no build step.",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "canonical-json",
+    "deterministic",
+    "stable-stringify",
+    "hash",
+    "reproducible"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/idcu/canonical-json.git"
+  }
+}
